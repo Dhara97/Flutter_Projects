@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutterbasics/Example1.dart';
+import 'package:flutterbasics/Example2.dart';
+import 'package:flutterbasics/Example4.dart';
 
 void main() {
   runApp(MyApp());
@@ -7,17 +10,11 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Flutter Basics'),
-        ),
-        body: Container(
-          margin: EdgeInsets.all(16),
-          color: Colors.blueGrey,
-          child: Center(child: Text('Welcome!',style: TextStyle(fontSize: 24,color: Colors.white),)),
-        ),
-      ),
+      debugShowCheckedModeBanner: false,
+      home: Example4()
     );
   }
 }
+
